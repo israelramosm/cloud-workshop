@@ -1,0 +1,30 @@
+GET http://localhost:4000/api/cos
+
+###
+
+POST http://localhost:4000/api/cos
+content-type: application/json
+
+{
+    "name": "sample",
+    "message": "Hello world"
+}
+
+###
+
+GET http://localhost:4000/api/cos/123
+
+###
+
+PATCH http://localhost:4000/api/cos/123
+content-type: application/json
+
+{
+    "name": "sample",
+    "message": "Hello world!!"
+}
+
+###
+
+DELETE http://localhost:4000/api/cos/123
+content-type: application/json
