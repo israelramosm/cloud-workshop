@@ -1,11 +1,9 @@
 import express from "express";
 
-import dotenv from "dotenv";
+import 'dotenv/config';
 import serverRoutes from "./routes/server.mjs";
 import cloudantRoutes from "./routes/cloudant.mjs";
 import cosRoutes from "./routes/cos.mjs";
-
-dotenv.config();
 
 const app = express();
 const port = process.env.port;
