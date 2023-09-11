@@ -7,23 +7,24 @@ content-type: application/json
 
 {
     "name": "sample",
-    "message": "Hello world"
+    "message": "Awesome Cloud Workshop"
 }
 
 ###
 
-GET http://localhost:4000/api/cloudant/123
+GET http://localhost:4000/api/cloudant/:id
+
 ###
 
-PATCH http://localhost:4000/api/cloudant/123
+PATCH http://localhost:4000/api/cloudant/:id
 content-type: application/json
 
 {
     "name": "sample",
-    "message": "Hello world!!"
+    "message": "Awesome Cloud Workshop v2"
 }
 
 ###
 
-DELETE http://localhost:4000/api/cloudant/123
+DELETE http://localhost:4000/api/cloudant/:id
 content-type: application/json
